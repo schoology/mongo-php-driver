@@ -1,9 +1,9 @@
 .PHONY: coverage testclean package package.xml
 
 DATE=`date +%Y-%m-%d--%H-%M-%S`
-MONGODB_VERSION=$(shell php -n -dextension=modules/mongodb.so -r 'echo MONGODB_VERSION;')
+MONGODB_VERSION=$(shell php -dextension=modules/mongodb.so -r 'echo MONGODB_VERSION;')
 MONGODB_MINOR=$(shell echo $(MONGODB_VERSION) | cut -d. -f1,2)
-MONGODB_STABILITY=$(shell php -n -dextension=modules/mongodb.so -r 'echo MONGODB_STABILITY;')
+MONGODB_STABILITY=$(shell php -dextension=modules/mongodb.so -r 'echo MONGODB_STABILITY;')
 
 help:
 	@echo -e "\t$$ make vm"
