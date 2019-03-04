@@ -1976,8 +1976,7 @@ void phongo_manager_init(php_phongo_manager_t *manager, const char *uri_string, 
 	}
 #endif
 
-	MONGOC_DEBUG("Created client hash: %s\n", hash);
-	php_phongo_persist_client(hash, hash_len, manager->client TSRMLS_CC);
+	MONGOC_DEBUG("Created client hash: %s but we do not persist!\n", hash);
 
 cleanup:
 	if (hash) {
