@@ -25,7 +25,7 @@
 extern zend_module_entry mongodb_module_entry;
 
 /* FIXME: Its annoying to bump version. Move into phongo_version.h.in */
-#define PHP_MONGODB_VERSION "1.3.5"
+#define PHP_MONGODB_VERSION "1.3.6"
 #define PHP_MONGODB_STABILITY "devel"
 
 /* Structure for persisted libmongoc clients. The PID is included to ensure that
